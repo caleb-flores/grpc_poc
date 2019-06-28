@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tegra.Grpc.Core\Tegra.Grpc.Core.csproj" />
+    <ProjectReference Include="..\Tegra.Infra.Data\Tegra.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

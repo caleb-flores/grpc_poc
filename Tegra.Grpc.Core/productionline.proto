@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package tegra.services;
+
+service ProductionLineService{
+	rpc GetProductionLines(ProductionLinesRequest) returns (ProductionLinesResponse);
+	rpc GetProductionLine(ProductionLineRequest) returns (ProductionLineResponse);
+}
+
+message ProductionLine{
+	int32 id = 1;
+	string name = 2;
+	string building = 3;
+}
+
+message ProductionLineRequest{
+	int32 id = 1;
+}
+
+message ProductionLineResponse{
+	ProductionLine result = 1;
+}
+
+message ProductionLinesRequest{}
+
+message ProductionLinesResponse{
+	repeated ProductionLine result = 1;
+}
